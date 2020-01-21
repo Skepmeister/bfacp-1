@@ -6,6 +6,7 @@ RUN \
   apk update && \
   apk add \
     nginx \
+    git \
     php5-fpm \
     php5-mcrypt \
     php5-openssl \
