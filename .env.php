@@ -68,4 +68,16 @@ return [
     'PUSHER_APP_ID' => getenv('PUSHER_APP_ID'),
     'PUSHER_APP_KEY' => getenv('PUSHER_APP_KEY'),
     'PUSHER_APP_SECRET' => getenv('PUSHER_APP_SECRET'),
+    
+    /**
+     * Email Settings
+     */
+    'MAIL_DRIVER' => 'smtp',
+    'MAIL_HOST' => 'smtp.mailtrap.io',
+    'MAIL_PORT' => 2525,
+    'MAIL_USERNAME' => '',
+    'MAIL_PASSWORD' => '',
+    'MAIL_FROM_ADDRESS' => '',
+    'MAIL_FROM_NAME' => '',
+    'MAIL_ENCRYPTION' => 'tls,
 ];
