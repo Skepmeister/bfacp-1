@@ -19,7 +19,7 @@ RUN \
 
 WORKDIR /app
 RUN composer create-project --prefer-dist --no-scripts --keep-vcs \
-  adkgamers/bfadmincp .
+  skepmeister/bfacp .
 COPY .env.php ./
 
 COPY nginx.conf /etc/nginx/
