@@ -18,8 +18,7 @@ RUN \
     composer
 
 WORKDIR /app
-RUN composer create-project --prefer-dist --no-scripts --keep-vcs \
-  skepmeister/bfacp .
+RUN git clone https://github.com/Skepmeister/BFACP.git . && composer install --no-dev && php artisan key:generate
 COPY .env.php ./
 
 COPY nginx.conf /etc/nginx/
