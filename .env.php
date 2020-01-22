@@ -79,5 +79,5 @@ return [
     'MAIL_PASSWORD' => '',
     'MAIL_FROM_ADDRESS' => '',
     'MAIL_FROM_NAME' => '',
-    'MAIL_ENCRYPTION' => 'tls,
+    'MAIL_ENCRYPTION' => 'tls',
 ];
