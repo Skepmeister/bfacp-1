@@ -16,6 +16,9 @@ RUN \
     php5-posix \
     php5-pdo_mysql \
     php5-ctype \
+    ext-curl \
+    ext-tokenizer \
+    ext-pcntl \
     composer
 
 WORKDIR /app
