@@ -18,4 +18,4 @@ RUN sed -ie 's/127\.0\.0\.1:9000/\/var\/run\/php5-fpm\.sock/g' \
 RUN sed -ie 's/;clear_env/clear_env/g' /etc/php5/php-fpm.conf
 
 EXPOSE 80
-CMD php-fpm5 && nginx
+CMD php-fpm && nginx
