@@ -16,13 +16,10 @@ RUN \
     php5-posix \
     php5-pdo_mysql \
     php5-ctype \
-    ext-curl \
-    ext-tokenizer \
-    ext-pcntl \
     composer
 
 WORKDIR /app
-RUN git clone https://github.com/Skepmeister/BFACP.git . && composer install --no-dev && php artisan key:generate
+RUN git clone https://github.com/Skepmeister/BFACP.git . && composer install --no-dev
 COPY .env.php ./
 
 COPY nginx.conf /etc/nginx/
